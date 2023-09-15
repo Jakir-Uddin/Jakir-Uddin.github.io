@@ -6,30 +6,35 @@ body, h1, h2, p, ul, li {
 
 /* Apply some basic styles to the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the header section */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 /* Style the navigation menu */
 nav ul {
     list-style: none;
+    text-align: center;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -41,14 +46,17 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Style sections */
 section {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the footer */
@@ -56,13 +64,37 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 }
 
-/* Add some hover effects to the navigation links */
+/* Add hover effects to the navigation links */
 nav a:hover {
     color: #ff6600;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
 
 /* Wide column */
 .column-1 {
